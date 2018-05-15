@@ -15669,40 +15669,12 @@ return '<div' + it.printAttributes() + '>\
                             toggle.insertAdjacentHTML('beforeend', '<b class="caret"></b>');
                     }
                 }
-
-                var current_location = window.location.href.toLowerCase().replace(/(^.*:)|(\/index.htm$)|(\/index.html$)|(#$)/g, ''),
-                    current_location_segs = current_location.split('/');
-
-                var links = element.querySelectorAll('a:not([href="#"])');
-                for(var k = 0, ck = links.length; k < ck; k++) {
-                    var link = links[k],
-                        compare = link.href.toLowerCase().replace(/(^.*:)|(#$)/g, '');
-                    if (compare === current_location)
-                        activateMenuItemItems(link);
-                    else {
-                        var compare_segs = compare.split('/'),
-                            matched = true;
-                        for(var l = 0, cl = compare_segs.length; l < cl && matched; l++)
-                        if (compare_segs[l] !== current_location_segs[l])
-                            matched = false;
-                        if (matched)
-                            activateMenuItemItems(link);
-                    }
-                }
             }
         };
                 
         this.listen('element', function() {
             this.applyElement();
         });
-        
-        function activateMenuItemItems(link, top) {
-            while(link.parentElement) {
-                link = link.parentElement;
-                if (link.tagName === 'LI')
-                    link.classList.add('active');
-            }
-        }
     };
     NavBar.prototype = controls.control_prototype;
     controls.typeRegister('navbar', NavBar);
