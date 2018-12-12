@@ -12,7 +12,7 @@
 * [Home](https://jivoin.com/)
 * [Projects]()
  * [DATA I/O 2018](https://jivoin.com/data-io-2018)
- * [HACK OHI/O 2018](https://jivoin.com/heck-ohio)
+ * [HACK OHI/O 2018](https://jivoin.com/hack-ohio-2018)
  * [Virtual Reality Therapy](https://jivoin.com/vrt)
  * [AdmitAlly](https://jivoin.com/admitally)
  * [Flappy McKain](https://jivoin.com/flappymckain)
@@ -47,12 +47,10 @@ Michael is a Biomedical Engineering student at the Ohio State University. He's t
 # What we built
 Over the course of 24 hours, we developed a C# WinForms application and a physical demo of our idea.
 
-*Documentation is still being compiled. Please bear with us.* 🙂
-
 ## Hardware
 ### Physical model
 
-![Image of model with dashboard in background](./img/model/overall_view.jpg)
+![Image of model with dashboard in background](./img/model/overall_view.jpg | width=560)
 
 #### Left room
 The room on the left contains a temperature sensor and lights to show if it is being cooled, heated, or neither. If devices are connected to the network in the room and its temperature rises above or below the desired temperature, the room is cooled or heated. When cooled or heated the blue or red LEDs turn on, respectively.
@@ -67,33 +65,33 @@ The model has two distinct lighting features.
 
 The most significant is the temperature LEDs. These show whether a room is cooling or heating, and update dynamically based on the user's requested temperature.
 
-![Array of LEDs to display cooling or heating status](./img/model/temp_leds.jpg)
+![Array of LEDs to display cooling or heating status](./img/model/temp_leds.jpg | width=560)
 
 The other lighting was the status LEDs for the number of devices connected. This was created with a re-purposed infinity mirror. Its purpose was to show that network data could be passed along to the Arduino. Each LED lit in the ring represents one device connected.
 
-![Infinity mirror showing one device connected](./img/model/inf_mirror.jpg)
+![Infinity mirror showing one device connected](./img/model/inf_mirror.jpg | width=560)
 
 ### Arduino and sensors
 An Arduino Nano was used to control the lighting and read the sensors. The Arduino read input from two environmental sensors and an ultrasonic sensor. Additionally it controlled the two lighting arrangements and the fan.
 
-![Close-up of the Arduino Nano setup](./img/model/arduino_closeup.jpg)
+![Close-up of the Arduino Nano setup](./img/model/arduino_closeup.jpg | width=560)
 
 ## Software
 ### Dashboard
 The dashboard is a C# WinForms application. It has three main components.
 
 #### Homescreen
-![Homescreen of dashboard](./img/winform/dashboard.png)
+![Homescreen of dashboard](./img/winform/dashboard.png | width=560)
 
 #### Map
 This screen shows a floor plan and each of its zones. Each zone can be individually monitored and controlled. Multiple floor plans can be added and selected.
 
-![Map view](./img/winform/zone.png)
+![Map view](./img/winform/zone.png | width=560)
 
 #### Settings
 Currently this screen only serves to select the port the Arduino is connected to. Other settings and preferences may be placed here in the future, such as network settings.
 
-![Settings view](./img/winform/settings.png)
+![Settings view](./img/winform/settings.png | width=560)
 
 ### Network Scanner
 The Network Scanner class was our way of detecting how many devices were on the network. It has the ability to asynchronously scan for other connections within an IP range or specific IPs. To avoid abuse, this class will only attempt to ping devices on the same network.
