@@ -124,9 +124,9 @@ sup {
 sub {
   bottom: -0.25em;
 }
-
 img {
   border: 0;
+  width: 560px;
 }
 
 svg:not(:root) {
@@ -1804,6 +1804,9 @@ table th[class*="col-"] {
 }
 
 @media (max-width: 767px) {
+  img {
+    width: 320px;
+  }
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
