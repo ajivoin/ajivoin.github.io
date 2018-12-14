@@ -132,6 +132,7 @@ img {
 iframe {
   border: 0;
   width: 560px;
+  height: 315px;
 }
 
 svg:not(:root) {
