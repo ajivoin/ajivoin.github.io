@@ -129,6 +129,11 @@ img {
   width: 560px;
 }
 
+iframe {
+  border: 0;
+  width: 560px;
+}
+
 svg:not(:root) {
   overflow: hidden;
 }
@@ -1806,6 +1811,10 @@ table th[class*="col-"] {
 @media (max-width: 767px) {
   img {
     width: 320px;
+  }
+  iframe {
+    width: 320px;
+    height: 180px;
   }
   .table-responsive {
     width: 100%;
