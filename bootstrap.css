@@ -126,7 +126,6 @@ sub {
 }
 img {
   border: 0;
-  width: 560px;
 }
 
 iframe {
@@ -7128,4 +7127,8 @@ td.visible-print {
   td.hidden-print {
     display: none !important;
   }
+}
+
+.article-vis {
+  width: 560px;
 }
