@@ -130,8 +130,6 @@ img {
 
 iframe {
   border: 0;
-  width: 560px;
-  height: 315px;
 }
 
 svg:not(:root) {
@@ -1809,12 +1807,8 @@ table th[class*="col-"] {
 }
 
 @media (max-width: 767px) {
-  img {
+  .article-vis {
     width: 320px;
-  }
-  iframe {
-    width: 320px;
-    height: 180px;
   }
   .table-responsive {
     width: 100%;
