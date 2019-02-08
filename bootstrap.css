@@ -7127,6 +7127,12 @@ td.visible-print {
   }
 }
 
-.article-vis {
-  width: 560px;
+@media (min-width: 768px) {
+  .article-vis {
+    width: 560px;
+  }
+
+  iframe {
+    height: 320px;
+  }
 }
