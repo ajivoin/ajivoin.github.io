@@ -1,0 +1,25 @@
+<div class="panel" id="projects">
+  <h1>Projects</h1>
+  <p class="text">Click on a project to read more.</p>
+
+  {%- for project in site.data.projects -%}
+    <div class="experience" id="{{ project.id }}">
+    <h2 class="experience-title" onclick="experienceClick('{{ project.id }}')">{{ project.name }}</h2>
+    <div class="text-wrapper hidden">
+      <p class="text">
+        {{ project.description }}
+      </p>
+      <p class="text">
+        Built with:&nbsp;
+        {%- for t in project.tech -%}
+          {{ t }}
+          {%- if forloop.last != true -%}
+            &nbsp;|&nbsp;
+          {%- endif -%}
+        {%- endfor -%}
+      </p>
+    </div>
+  </div>
+  {%- endfor -%}
+
+</div>

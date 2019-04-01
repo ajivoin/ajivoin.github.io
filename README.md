@@ -1,1 +1,8 @@
-Used a template that converts markdown to HTML to get a basic website going.
+# Andrew Jivoin's personal website
+
+## Development
+
+```bash
+bundle install
+jekyll serve
+```

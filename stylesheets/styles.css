@@ -1,0 +1,55 @@
+body {
+  font-display: swap;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0px;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.1s linear, height 0.1s linear;
+}
+
+hr {
+  background-color: #000000;
+  border: 0;
+  height: 1px;
+  margin: 1ex 0;
+  background-image: -webkit-linear-gradient(left, lightblue, white);
+  background-image: -moz-linear-gradient(left, lightblue, white);
+  background-image: -ms-linear-gradient(left, lightblue, white);
+  background-image: -o-linear-gradient(left, lightblue, white);
+}
+
+#content {
+  margin: 10em 10em;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.experience-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  font-weight: bolder;
+  color: rgb(39, 116, 216);
+  margin: 0;
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.experience .text {
+  font-size: 16px;
+}

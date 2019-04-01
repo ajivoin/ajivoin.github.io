@@ -1,0 +1,49 @@
+- name: GroupMe Analysis
+  id: groupme-analysis
+  tech:
+    - JavaScript
+    - Chart.js
+  description:
+    We wanted to bring data visualization to everyday social media users, not just people who know how to use visualization tools.
+    <br />
+    So we did by creating this GroupMe chat history visualization application.
+    <br /><br />
+    We came in <strong>first place</strong> at <a href="https://bdaaosu.org/dataio.php">DATA I/O</a> 2018 in the Data Visualization category.
+    <br /><br />
+    If you'd like to give the application a try <a href="https://jivoin.com/groupme-analysis">click here</a>.
+    <br />
+    See our code <a href="https://github.com/ajivoin/groupme-analysis">here</a>.
+
+- name: Smart(er) Thermostat
+  id: heck-ohio
+  tech:
+    - C#
+    - C/C++
+    - Arduino
+  description:
+    Large businesses and universities have WiFi access points everywhere. Can these be utilized to more intelligently turn on air conditioning and heating, leading to vast energy savings?
+    <br /><br />
+    At <a href="http://hack.osu.edu/2018/">HackOHI/O 2018</a>, we put together an application and physical model to showcase our answer to this question.
+    <br /><br />
+    Our goal was to take advantage of vast wireless internet networks to create a smarter climate control solution. We accomplished this by combining network connection data of access points with temperature and proximity readings.
+    <br /><br />
+    To see our project in action, <a href="https://jivoin.com/heck-ohio/">click here</a>.
+    <br />
+    See our code <a href="https://github.com/ajivoin/heck-ohio/">here</a>.
+
+- name: Virtual Reality Therapy
+  id: vrt
+  tech:
+    - Unity
+    - C#
+  description:
+    Combined research into virtual reality and exposure therapy with development done in Unity and C# to create a prototype for a low-cost, virtual-reality, phobia-therapy application.
+    <br /><br />
+    The VRT prototype helped users overcome acrophobia, the fear of heights. This was done by constructing a city in Unity 3D and allowing the user to safely traverse the rooftops without being able to fall off.
+    <br /><br />
+    The application is compatible with Android 4.4 or newer. All a user would need is a Google Cardboard headset, which makes this application cheap to use.
+    Throughout the development period, I was the manager and lead developer for a team of five other students.
+    <br /><br />
+    VRT was presented to Fortune 500 executives during the Showcase Project Competition at TechOlympics in February 2017. Our team placed third out of seventeen teams.
+  
+- name: 
