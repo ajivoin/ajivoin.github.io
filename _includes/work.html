@@ -1,0 +1,26 @@
+<div class="panel" id="work">
+  <h1>Work Experience</h1>
+  <p class="text">Click on a work to read more.</p>
+
+  {%- for work in site.data.work -%}
+    <div class="experience" id="{{ work.id }}">
+    <h2 class="experience-title" onclick="experienceClick('{{ work.id }}')">{{ work.name }}</h2>
+    <div class="text-wrapper hidden">
+      <p class="text">
+        <b>{{ work.time }}</b>
+        <br />
+        {{ work.description }}
+      </p>
+      <p class="text">
+        Worked with:&nbsp;
+        {%- for t in work.tech -%}
+          {{ t }}
+          {%- if forloop.last != true -%}
+            &nbsp;|&nbsp;
+          {%- endif -%}
+        {%- endfor -%}
+      </p>
+    </div>
+  </div>
+  {%- endfor -%}
+</div>
