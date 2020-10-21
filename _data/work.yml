@@ -1,6 +1,27 @@
+- name: Microsoft
+  position: Software Engineering Intern
+  time: Summer 2020
+  id: microsoft-internship
+  tech:
+    - C#
+  description:
+    Designed and developed backed features on the Azure team at Microsoft.
+
+- name: Google
+  position: Software Engineering Intern
+  time: Summer 2019
+  id: google-internship
+  tech:
+    - Java
+    - Android Studio
+  description:
+    Designed and implemented features for the Google app on Android.
+
+
 - name: Kroger Digital
+  position: Software Development Intern
   time: Summer 2018
-  id: kroger-digtal
+  id: kroger-internship
   tech:
     - React
     - JavaScript
@@ -10,8 +31,9 @@
     Highlights include accessibility improvements, site performance, component extraction, and third-party delivery integration.
 
 - name: Ascendum Solutions
+  position: Software Engineering Intern
   time: Summer 2017
-  id: ascendum
+  id: ascendum-internship
   tech:
     - Ruby on Rails
     - JavaScript

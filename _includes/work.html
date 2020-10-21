@@ -7,8 +7,8 @@
     <h2 class="experience-title" onclick="experienceClick('{{ work.id }}')">{{ work.name }}</h2>
     <div class="text-wrapper hidden">
       <p class="text">
-        <b>{{ work.time }}</b>
-        <br />
+        <b>{{ work.position }}, {{ work.time }}</b>
+        <br /><br />
         {{ work.description }}
       </p>
       <p class="text">
@@ -16,7 +16,7 @@
         {%- for t in work.tech -%}
           {{ t }}
           {%- if forloop.last != true -%}
-            &nbsp;|&nbsp;
+            ,&nbsp;
           {%- endif -%}
         {%- endfor -%}
       </p>

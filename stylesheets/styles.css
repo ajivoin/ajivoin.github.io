@@ -12,13 +12,13 @@
   visibility: hidden;
   height: 0px;
   opacity: 0;
-  transition: visibility 0.5s, opacity 0.1s linear, height 0.1s linear;
+  transition: visibility 0.5s, opacity 0s linear, height 0s linear;
 }
 
 hr {
   background-color: #000000;
   border: 0;
-  height: 1px;
+  height: 0.5ex;
   margin: 2ex 0;
   background-image: -webkit-linear-gradient(left, lightblue, white);
   background-image: -moz-linear-gradient(left, lightblue, white);
@@ -27,12 +27,12 @@ hr {
 }
 
 #content {
-  margin: 10em 10em;
+  padding: 5em;
 }
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 40px;
+  font-size: 48px;
   font-weight: lighter;
 }
 
@@ -52,5 +52,10 @@ h1 {
 }
 
 .experience .text {
-  font-size: 16px;
+  font-size: 24px;
+}
+
+.embed iframe {
+  margin: 0 auto;
+  display: block;
 }

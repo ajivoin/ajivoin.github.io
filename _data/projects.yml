@@ -1,3 +1,35 @@
+- name: Smart Pill Dispenser
+  id: smart-pill
+  tech:
+    - Ruby on Rails
+    - JavaScript
+    - Arduino (C/C++)
+  description:
+    Many people struggle with remembering to take their medications. We wanted to leverage smart technology to help people remember to take their medicine!
+    <br/><br/>
+    At Hack OHI/O 2019, we created a smart pill dispenser that reminds people to take their medications. Patients or their caretaker can specify a schedule for each of their medications. The dispenser keeps track of how many pills are left, what times the medication is dispensed, and if the pills are actually taken.
+    <br/><br/>
+    We built a mobile-friendly web app where the medication schedule is entered so the pills are dispensed at the correct time. The medication history is visible, showing if pills were taken, and if so, when they were taken. Text notifications are sent out when the pill is dispensed, if the pill is still not taken after a specified amount of time, and when a refill is needed.
+    <br/><br/>
+    A physical prototype was constructed to show our idea in action. Hardware components include an Arduino, NodeMCU, servo motors, a display, and an ultrasonic sensor. The dispenser communicated with the web app over Wi-Fi.
+    <br/><br/>
+    Our project got third place overall at Hack OHI/O 2019, Ohio State's flagship hackathon with over 800 attendees.
+    <br/><br/>
+    Web app development was done with Ruby on Rails and JavaScript. Arduino development was done with C and C++.
+    <div class="embed"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Dytg9O8Kf9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+- name: Spotify Recommendation Analysis
+  id: spotify-analysis
+  tech:
+    - Python
+    - Spotipy
+  description:
+    Have you ever listened to Spotify’s Discover Weekly playlist and wondered why a certain song was recommended to you? It happens to us quite often. We sought to find what songs we listened to in the past influenced what songs were recommended.
+    <br/><br/>
+    Spotify’s API provides a lot of information about songs, such as its energy, danceability, speechiness, acousticness. We utilized this data from the API to create a linear regression model for these factors so we could determine if songs were similar. This model was utilized in an application where any user can sign in and specify a song in order to find what they listened to that could have caused the recommendation.
+    <br/><br/>
+    We came in first place at Data I/O 2019 in the best presentation category.
+
 - name: GroupMe Analysis
   id: groupme-analysis
   tech:
@@ -46,4 +78,3 @@
     <br /><br />
     VRT was presented to Fortune 500 executives during the Showcase Project Competition at TechOlympics in February 2017. Our team placed third out of seventeen teams.
   
-- name: 
