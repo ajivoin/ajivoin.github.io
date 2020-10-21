@@ -1,5 +1,7 @@
-.body {
+body {
   font-display: swap;
+  color: #232323;
+  background-color: #fafafa;
 }
 
 .visible {
@@ -15,7 +17,7 @@
   transition: visibility 0.5s, opacity 0s linear, height 0s linear;
 }
 
-hr {
+/* hr {
   background-color: #000000;
   border: 0;
   height: 0.5ex;
@@ -24,21 +26,22 @@ hr {
   background-image: -moz-linear-gradient(left, lightblue, white);
   background-image: -ms-linear-gradient(left, lightblue, white);
   background-image: -o-linear-gradient(left, lightblue, white);
-}
+} */
 
 #content {
-  padding: 5em;
+  padding: 1em;
+  width: auto;
 }
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: lighter;
 }
 
 .experience-title {
   font-family: "Roboto Slab", serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bolder;
   color: rgb(39, 116, 216);
   margin: 0;
@@ -47,15 +50,84 @@ h1 {
 
 .text {
   font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 100;
 }
 
 .experience .text {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .embed iframe {
+  width: auto;
+  height: auto;
   margin: 0 auto;
   display: block;
+}
+
+.big-only {
+  display: hidden;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fafafa;
+    background-color: #232323;
+  }
+
+  .experience-title {
+    color:  rgb(104, 164, 243);
+  }
+
+  a {
+    color: rgb(104, 164, 243);
+  }
+}
+@media only screen and (min-width: 768px) {
+  #content {
+    padding: 5em 15%;
+    width: auto;
+  }
+
+  .experience .text {
+    font-size: 16px;
+  }
+
+  .embed iframe {
+    width: 560;
+    height: 315;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1220px) {
+  #content{
+    padding: 5em 25%;
+  }
+
+  #projects {
+    /* width: 50%; */
+    float: left;
+    width: 45%;
+  }
+  #work {
+    /* flex: 1; */
+    /* width: 50%; */
+    float: right;
+    width: 45%;
+  }
+
+  .mobile-only {
+    visibility: hidden;
+  }
+
+  .big-only {
+    border-style: inset;
+    border-width: 1px;
+    opacity: 66%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+  }
 }
