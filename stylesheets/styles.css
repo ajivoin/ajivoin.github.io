@@ -17,17 +17,6 @@ body {
   transition: visibility 0.5s, opacity 0s linear, height 0s linear;
 }
 
-/* hr {
-  background-color: #000000;
-  border: 0;
-  height: 0.5ex;
-  margin: 2ex 0;
-  background-image: -webkit-linear-gradient(left, lightblue, white);
-  background-image: -moz-linear-gradient(left, lightblue, white);
-  background-image: -ms-linear-gradient(left, lightblue, white);
-  background-image: -o-linear-gradient(left, lightblue, white);
-} */
-
 #content {
   padding: 1em;
   width: auto;
@@ -63,10 +52,6 @@ h1 {
   height: auto;
   margin: 0 auto;
   display: block;
-}
-
-.big-only {
-  display: hidden;
 }
 
 /* reduced motion */
