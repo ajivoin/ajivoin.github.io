@@ -23,13 +23,13 @@ body {
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Bree Serif", serif;
   font-size: 36px;
   font-weight: lighter;
 }
 
 .experience-title {
-  font-family: "Roboto Slab", serif;
+  font-family: "Bree Serif", serif;
   font-size: 20px;
   font-weight: bolder;
   color: rgb(39, 116, 216);
@@ -38,7 +38,7 @@ h1 {
 }
 
 .text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 100;
 }
@@ -55,10 +55,24 @@ h1 {
 }
 
 /* reduced motion */
-@media only screen and ((prefers-reduced-motion: reduced) or (scripting: none) or (scripting: initial-only)) {
+@media only screen and (prefers-reduced-motion: reduce) {
   .hidden {
     visibility: visible;
     opacity: 1;
+    height: auto;
+  }
+
+  .visible {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media (scripting: none) {
+  .hidden {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
   }
 
   .visible {
