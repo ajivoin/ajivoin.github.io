@@ -5,9 +5,11 @@ layout: default
 {%- include intro.html -%}
 
 <hr />
+<div style="display: block; height: auto; overflow: hidden; position: relative;" id="experiences">
+  {%- include projects.html -%}
 
-{%- include projects.html -%}
+  <hr class="mobile-only" />
+  <div class="big-only"></div>
 
-<hr />
-
-{%- include work.html -%}
+  {%- include work.html -%}
+</div>
