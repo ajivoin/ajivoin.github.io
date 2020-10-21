@@ -16,7 +16,7 @@
     Our project got third place overall at Hack OHI/O 2019, Ohio State's flagship hackathon with over 800 attendees.
     <br/><br/>
     Web app development was done with Ruby on Rails and JavaScript. Arduino development was done with C and C++.
-    <div class="embed"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Dytg9O8Kf9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="embed"><iframe title="Smart Pill Dispenser Video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Dytg9O8Kf9Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 - name: Spotify Recommendation Analysis
   id: spotify-analysis
@@ -42,9 +42,7 @@
     <br /><br />
     We came in <b>first place</b> at <a href="https://bdaaosu.org/dataio.php">Data I/O</a> 2018 in the Data Visualization category.
     <br /><br />
-    If you'd like to give the application a try <a href="https://jivoin.com/groupme-analysis">click here</a>.
-    <br />
-    See our code <a href="https://github.com/ajivoin/groupme-analysis">here</a>.
+    Feel free to <a href="https://jivoin.com/groupme-analysis">try our application</a> or <a href="https://github.com/ajivoin/groupme-analysis">check out the source code</a>.
 
 - name: Smart(er) Thermostat
   id: heck-ohio
@@ -59,9 +57,7 @@
     <br /><br />
     Our goal was to take advantage of vast wireless internet networks to create a smarter climate control solution. We accomplished this by combining network connection data of access points with temperature and proximity readings.
     <br /><br />
-    To see our project in action, <a href="https://jivoin.com/heck-ohio/">click here</a>.
-    <br />
-    See our code <a href="https://github.com/ajivoin/heck-ohio/">here</a>.
+    <a href="https://jivoin.com/heck-ohio/">Continue reading about the project</a> or <a href="https://github.com/ajivoin/heck-ohio/">see our code</a>.
 
 - name: Virtual Reality Therapy
   id: vrt
