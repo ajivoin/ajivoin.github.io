@@ -1,24 +1,27 @@
-<div class="panel" id="projects">
-  <h1>Projects</h1>
-  <!-- <p class="text">Click on a project to read more.</p> -->
+<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Projects</h2>
+<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">GitHub repositories that I've built.</p>
+<div class="d-sm-flex flex-wrap gutter-condensed mb-4">
+  {% if site.projects.sort_by == 'stars' %}
+    {% assign sort_order = 'stargazers_count', 'last' %}
+  {% else %}
+    {% assign sort_order = 'pushed_at' %}
+  {% endif %}
 
-  {%- for project in site.data.projects -%}
-    <div class="experience" id="{{ project.id }}">
-    <h2 class="experience-title" onclick="experienceClick('{{ project.id }}')">{{ project.name }}</h2>
-    <div class="text-wrapper hidden">
-      <p class="text">
-        {{ project.description }}
-      </p>
-      <p class="text">
-        Built with:&nbsp;
-        {%- for t in project.tech -%}
-          {{ t }}
-          {%- if forloop.last != true -%}
-            ,&nbsp;
-          {%- endif -%}
-        {%- endfor -%}
-      </p>
-    </div>
-  </div>
-  {%- endfor -%}
+  {% if site.projects.exclude.archived && site.projects.exclude.forks %}
+    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | where:'fork', false | sort: sort_order | reverse %}
+  {% elsif site.projects.exclude.archived %}
+    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | sort: sort_order | reverse %}
+  {% elsif site.projects.exclude.forks %}
+    {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
+  {% else %}
+    {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
+  {% endif %}
+
+  {% for repository in filtered_repos | limit: site.projects.limit %}
+    {% unless site.projects.exclude.projects contains repository.name %}
+      <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+        {% include repo-card.html %}
+      </div>
+    {% endunless %}
+  {% endfor %}
 </div>

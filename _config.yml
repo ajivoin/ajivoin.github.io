@@ -1,35 +1,60 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+layout: sidebar
+style: light
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Andrew Jivoin
-email: andrew@jivoin.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jivoin.com" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  ajivoin
-
-# Build settings
 plugins:
-  - jekyll-seo-tag
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - CNAME
-  - LICENSE
-  - README.md
-  - .gitignore
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+
+projects:
+  sort_by: stars
+  # sort_by options:
+  #   - pushed
+  #   - stars
+  limit: 10
+  exclude:
+    archived: false
+    forks: true
+    projects:
+    - ajivoin.github.io
+
+# social_media:
+  # behance: your_username
+  # dribbble: your_username
+  # facebook: your_username
+  # hackerrank: your_username
+  # instagram: your_username
+  # keybase: your_username
+  linkedin: jivoin
+  # mastodon: your_username
+  # medium: your_username
+  # stackoverflow: your_user_id
+  # telegram: your_username
+  # twitter: your_username
+  # unsplash: your_username
+  # vk: your_username
+  # website: http://your_website_url
+  # youtube: your_username
+
+topics:
+  - name: Node.js
+    web_url: https://github.com/topics/nodejs
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png
+
+  - name: Python
+    web_url: https://github.com/topics/python
+    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png
+
+  - name: Machine Learning
+    web_url: https://github.com/topics/machine-learning
+    image_url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Svm_max_sep_hyperplane_with_margin.png

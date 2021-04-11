@@ -1,36 +1,33 @@
-<!doctype html>
-<html lang="en">
+{% include header.html %}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1">
-  <meta name="description" content="Andrew Jivoin, Software Engineer">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="/stylesheets/styles.css">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway&display=swap" rel="stylesheet"> 
-</head>
+{% if site.layout == 'stacked' %}
+  <div class="container-lg py-6 p-responsive text-center">
+    {% include masthead.html metadata=false %}
 
-<body>
-  <header>
-    <!-- Header Here-->
-
-    <!-- <nav>
-      <a href="/">Home</a>
-    </nav> -->
-  </header>
-  <div id='content'>
-  {{ content }}
+    <div class="container-md f4 text-left border rounded-2 bg-white p-3 p-sm-5 mt-6">
+      <p class="f5"><a href="/" class="d-flex flex-items-center">{% octicon chevron-left height:16 class:"mr-2 v-align-middle" fill:#0366d6 aria-label:Home %}Home</a></p>
+      <h1 class="f00-light lh-condensed mb-5">{{ page.title }}</h1>
+      {{ content }}
+    </div>
   </div>
-  <footer>
-    
-  </footer>
-  <script src="scripts/index.js"></script>
-</body>
+{% else %}
+  <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
+    <div class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light bg-white{% endif %} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6">
+      {% include masthead.html metadata=true %}
+    </div>
 
-</html>
+    <div class="col-md-7 col-lg-8 col-xl-9 px-4 py-6 px-lg-7 border-top border-md-top-0 bg-gray-light" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
+      <div class="mx-auto" style="max-width: 900px;">
+        <div class="f4 {% if site.style == 'dark' %}text-white{% endif %} mb-6">
+          <div class="f4 {% if site.style == 'dark' %}text-white{% endif %}">
+            <p class="f5"><a href="{{ site.url }}{{ site.baseurl | append:'/' }}" class="d-flex flex-items-center {% if site.style == 'dark' %}text-white{% endif %}">{% octicon chevron-left height:16 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Home %}Home</a></p>
+            <h1 class="f00-light lh-condensed mb-5">{{ page.title }}</h1>
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% include footer.html %}
