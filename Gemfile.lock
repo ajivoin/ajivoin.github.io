@@ -265,6 +265,7 @@ DEPENDENCIES
   github-pages
   jekyll-github-metadata
   jekyll-octicons
+  jekyll-seo-tag
   jemoji
 
 BUNDLED WITH

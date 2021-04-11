@@ -5,6 +5,7 @@ plugins:
   - jekyll-octicons
   - jekyll-github-metadata
   - jemoji
+  - jekyll-seo-tag
 
 permalink: /:year/:month/:day/:title/
 
@@ -58,3 +59,14 @@ topics:
   - name: Machine Learning
     web_url: https://github.com/topics/machine-learning
     image_url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Svm_max_sep_hyperplane_with_margin.png
+
+title: Andrew Jivoin
+tagline: Andrew Jivoin's Software Portfolio
+description: Andrew Jivoin's Software Portfolio
+url: https://jivoin.com/
+author: Andrew Jivoin
+social:
+  name: Andrew Jivoin
+  links:
+    - https://linkedin.com/in/jivoin
+    - https://github.com/ajivoin
