@@ -47,18 +47,18 @@ social_media:
   # website: http://your_website_url
   # youtube: your_username
 
-topics:
-  - name: Node.js
-    web_url: https://github.com/topics/nodejs
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png
+# topics:
+#   - name: Node.js
+#     web_url: https://github.com/topics/nodejs
+#     image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png
 
-  - name: Python
-    web_url: https://github.com/topics/python
-    image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png
+#   - name: Python
+#     web_url: https://github.com/topics/python
+#     image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png
 
-  - name: Machine Learning
-    web_url: https://github.com/topics/machine-learning
-    image_url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Svm_max_sep_hyperplane_with_margin.png
+#   - name: Machine Learning
+#     web_url: https://github.com/topics/machine-learning
+#     image_url: https://upload.wikimedia.org/wikipedia/commons/2/2a/Svm_max_sep_hyperplane_with_margin.png
 
 title: Andrew Jivoin
 tagline: Andrew Jivoin's Software Portfolio
