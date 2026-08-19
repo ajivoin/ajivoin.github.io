@@ -13,7 +13,9 @@ interface Props {
 
 const { post } = Astro.props;
 const { ogImage, title, description, updatedDate, publishDate } = post.data;
-const socialImage = ogImage ?? `/og-image/${post.id}.png`;
+// `||` (not `??`) so an empty-string ogImage falls back too, matching the falsy check
+// that og-image/[...slug].png.ts uses to decide whether to generate a custom image.
+const socialImage = ogImage || `/og-image/${post.id}.png`;
 const articleDate = updatedDate?.toISOString() ?? publishDate.toISOString();
 const { headings, remarkPluginFrontmatter } = await render(post);
 const readingTime: string = remarkPluginFrontmatter.readingTime;

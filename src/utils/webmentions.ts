@@ -34,13 +34,19 @@ async function fetchWebmentions(timeFrom: string | null, perPage = 1000) {
 
 	let url = `https://webmention.io/api/mentions.jf2?domain=${hostName}&token=${WEBMENTION_API_KEY}&sort-dir=up&per-page=${perPage}`;
 
-	if (timeFrom) url += `&since${timeFrom}`;
+	if (timeFrom) url += `&since=${timeFrom}`;
 
-	const res = await fetch(url);
+	try {
+		const res = await fetch(url);
 
-	if (res.ok) {
-		const data = (await res.json()) as WebmentionsFeed;
-		return data;
+		if (res.ok) {
+			const data = (await res.json()) as WebmentionsFeed;
+			return data;
+		}
+	} catch (err) {
+		// A transient network failure here shouldn't fail the whole build — the memoized
+		// promise below is shared by every page, so an unhandled rejection would poison it.
+		console.warn("Webmentions fetch failed", err);
 	}
 
 	return null;
