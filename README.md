@@ -20,5 +20,5 @@ npm run preview  # preview the production build
 
 ## Deployment
 
-Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds the site and deploys it
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the site and deploys it
 to GitHub Pages. The custom domain is set via `public/CNAME`.
