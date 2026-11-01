@@ -30,7 +30,7 @@
 		"mdast-util-directive": "^3.0.0",
 		"mdast-util-to-markdown": "^2.1.2",
 		"mdast-util-to-string": "^4.0.0",
-		"satori": "0.33.4",
+		"satori": "0.33.5",
 		"satori-html": "^0.3.2",
 		"satteri": "^0.10.5",
 		"sharp": "^0.35.4",
